@@ -71,16 +71,20 @@ namespace A3HTSAS1P2
                 option=Console.ReadLine();
 
                 if (option == "a"){                           
-                    Console.WriteLine("First number/ second number multiplied by 100: " + (num1 / num2) * 100 + "%");                            
+                    Console.WriteLine("First number/ second number multiplied by 100: " + (num1 / num2) * 100 + "%");
+                    i=false;                            
                 }
                 else if (option== "b"){
                     Console.WriteLine("result of multiplying all numbers:" + num1*num2*num3)
+                    i=false;
                 }
                 else if (option== "c"){
-                    Console.WriteLine("Result of addition os all numbers" + num1+num2+num3);                     
+                    Console.WriteLine("Result of addition os all numbers" + num1+num2+num3);  
+                    i=false;                   
                 }
                 else{
                     Console.WriteLine("please enter only a, b, or c ");
+                    i=true;
                 }
             }
         }
